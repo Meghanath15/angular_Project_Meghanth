@@ -1,0 +1,17 @@
+<menu type="toolbar" class="menubar container">
+  <div class="nav-1">
+  <li><a routerLink="/" >ngEvents</a></li>
+  <li><a routerLink="events"  >AllEvents</a></li>
+  <li><a routerLink="form"  >CreateEvent</a></li>
+  <li><a routerLink="liked"  > Events</a></li>
+</div>
+<div class="nav-1">
+  <input type="search" class="form-control" id="searchName"
+  [(ngModel)]="searchName" placeholder="Search sessions" />
+  <li><a routerLink=""><button (click)="handleSearch($event)">Search</button></a></li>
+</div>
+</menu>
+<div class="outlet">
+<router-outlet></router-outlet>
+</div>
+

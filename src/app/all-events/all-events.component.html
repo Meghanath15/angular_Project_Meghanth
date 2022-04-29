@@ -1,0 +1,7 @@
+<h2 class="title" [title]="'Events list'">Upcoming Angular Events</h2>
+<div class="events-container">
+        <app-each-event
+        *ngFor="let event of events"
+        [event]="event"
+        ></app-each-event>
+</div>

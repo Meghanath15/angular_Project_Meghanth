@@ -1,0 +1,70 @@
+<!-- 
+<div class="form-container">
+  <form class="user-add-form" [formGroup]="userForm">
+      <fieldset class="fieldset">
+        <legend class="legend">Enter new user details</legend>
+        <div class="input-group">
+          <label for="name" class="input-label">User name</label>
+          <input
+            type="text"
+            class="input-control"
+            name="name"
+            placeholder="user name here"
+            id="name"
+            formControlName='name'
+                    
+   />
+         <p *ngIf="userForm.get('name').invalid && userForm.get('name').dirty" class="input-errors">*Invalid Syntax for NAME</p>
+          <p *ngIf="!userForm.get('name').value && userForm.get('name').dirty" class="input-errors">*Title is required</p>
+        </div>
+        <div class="input-group">
+          <label for="age" class="input-label">User AGE</label>
+          <input
+            type="number"
+            min="1"
+            max="99"
+            class="input-control"
+            name="age"
+            placeholder="user age here"
+            id="age"
+            [formControl]="userForm.get('age')"
+          />
+          <p *ngIf="userForm.get('age').errors.max" class="input-errors">*Age should be less than 40 </p>
+          <p *ngIf="userForm.get('age').errors.min && userForm.get('age').dirty" class="input-errors">*Age should be greater than 10 </p>
+          <p *ngIf="!userForm.get('age').errors.actualValue && userForm.get('age').dirty" class="input-errors">*Age is required</p>
+        </div>
+        <div class="input-group">
+          <label for="bio" class="input-label">User BIO</label>
+          <textarea
+            class="input-control"
+            name="bio"
+            placeholder="user bio here"
+            id="bio"
+            rows="3"
+            [formControl]="userForm.get('bio')"
+          ></textarea>
+          <p *ngIf="userForm.get('bio').invalid && userForm.get('bio').dirty" class="input-errors">*Invalid Syntax for BIO</p>
+          <p *ngIf="!userForm.get('bio').value && userForm.get('bio').dirty" class="input-errors">*BIO is required</p>
+        </div>
+        <div class="input-group">
+          <label for="gender" class="input-label">user gender</label>
+          <select
+            class="input-control"
+            name="gender"
+            id="gender"
+            formControlName="gender"
+          >
+            <option value="undefined" disabled selected>Select a gender</option>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="prefernottoshare">Prefer not to share</option>
+          </select>
+        </div>
+        <div class="input-group align-center">
+          <button type="submit" class="btn btn-danger" (click)="handleSubmit()" [disabled]="userForm.invalid">Submit</button>
+          <button type="button" class="btn" (click)="handleClear()">Clear</button>
+  
+      </div>
+      </fieldset>
+    </form>
+    </div> -->

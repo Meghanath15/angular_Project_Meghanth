@@ -1,0 +1,8 @@
+<div class="each-event">
+    <h2>{{ event.name }}</h2>
+    <p>Date: {{ event.date }}</p>
+    <p>Time: {{ event.time }}</p>
+    <p>Price: {{ event.price |  currency:'USD':'symbol':'0.2-2' }}</p>
+    <p>Location: {{event.location.address}} {{event.location.city}}, {{event.location.country}}</p>
+</div>
+

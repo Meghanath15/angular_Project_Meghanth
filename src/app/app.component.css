@@ -1,0 +1,145 @@
+
+
+.menubar {
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    align-items: center;
+    column-gap: 2rem;
+    background-color:lightslategrey;
+    padding: 0.75rem 1rem;
+
+}
+.menubar li {
+    list-style-type: none;
+}
+.menubar li a {
+    display: inline-flex;
+    padding: 0.5em 1em;
+    font-size: 22px;
+    background-color:transparent;
+    color:aliceblue;
+    margin-left: 20px;
+}
+h1{
+   text-align: center; 
+   margin-top: 30vh;
+   color: rgb(37, 73, 173);
+}
+
+.outlet{
+    background-color: rgb(54, 72, 110);
+}
+.nav-1{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.user-add-form{
+    background-color:#c6aa88;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.fieldset{
+    width: 40vw;
+}
+.legend{
+    font-size: 22px;
+    color: maroon;
+    font-weight: bold;
+    
+}
+.input-label{
+    font-size: 18px;
+    color: darkblue;
+    margin-right: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.input-control{
+    border: 1px solid black;
+    margin-bottom: 8px;
+}
+.main{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.even-cont{
+    background-color: darkgray;
+    width: 30%;
+    padding: 20px;
+    margin-bottom: 30px;
+}
+.buttons-cont{
+    display: flex;
+    justify-content: space-around;
+}
+.odd-cont{
+    background-color: rgb(163, 125, 125);
+    width: 30%;
+    padding: 20px;
+    margin-bottom: 30px;
+}
+.display-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color:darkseagreen;
+    margin:10px;
+    color: maroon;
+    width: 30%;
+
+}
+.display-container p{
+    color: black;
+}
+.main-display-cont{
+    display: flex;
+
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.input-errors{
+    color: rgb(252, 60, 2);
+    margin-left: 8vw;
+    font-weight: 12px;
+}
+.clear-btn{
+    font-size: 17px;
+    width:13vw;
+    height: 7vh;
+    background-color: antiquewhite;
+    color: red;
+    border-radius: 16px;
+    font-weight: bold;
+    border: none;
+    margin-bottom: 10px;
+}
+.btn[disabled]{
+    background-color: blueviolet;
+    cursor: not-allowed;
+}
+button{
+    background-color:midnightblue;
+    color: white;
+    width: 10vw;
+    height: 30px;
+    font-size: 15px;
+    padding: auto;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 14px;
+    border: none;
+    margin-right: 20px;
+}
+.not-found-img{
+    width: 20vw;
+    height: 30vh;
+}
+
